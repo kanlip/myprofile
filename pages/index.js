@@ -22,11 +22,11 @@ export default class extends Component {
           </header>
           <div id="about" className="containerb">
             <div className="button-action">
-              <Button href="#contact" primary>
-                lets talk
+              <Button href="/kanpdf" primary target="_blank">
+                know me better
               </Button>
-              <Button href="/kanpdf" target="_blank">
-                who am i
+              <Button href="#contact">
+                discuss more
               </Button>
               <div className="container-social">
                 <SocialButtons />
@@ -49,9 +49,7 @@ export default class extends Component {
             <h1>LET'S TALK</h1>
             <h6>EMAIL ME OR SEND ME A REQUEST</h6>
             <div className="contact-container">
-              <div>
-                kan_lip(at)hotmail.com
-              </div>
+              <div>kan_lip(at)hotmail.com</div>
             </div>
           </div>
           <div className="container">
