@@ -1,0 +1,189 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css");
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px !important;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.containerb {
+  width: 100%;
+
+  height: 440px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  justify-self: flex-start;
+}
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact {
+  margin: 40px;
+}
+.contact-header {
+  color: #505050;
+  text-align: center;
+}
+.container-social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-self: flex-start;
+  justify-content: space-around;
+}
+.container-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-self: flex-start;
+  justify-content: space-around;
+}
+i {
+  font-size: 40px;
+}
+.mypic {
+  width: 600px;
+  height: 500px;
+}
+.background-gradient {
+  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+}
+hr {
+  border: none;
+  height: 2px;
+  /* Set the hr color */
+  color: #333; /* old IE */
+  background-color: #333; /* Modern Browsers */
+}
+.tabs {
+  text-align: center;
+}
+
+.tab-list {
+  padding-left: 0;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.75rem;
+  font-size: 17px;
+  margin: 0px 5px 0px 10px;
+  text-decoration: none;
+  color: #505050;
+  text-transform: uppercase;
+}
+.tab-list-item:hover {
+  cursor: pointer;
+}
+
+.tab-list-active {
+  border-bottom: 3px solid black;
+}
+a {
+  display: inline-block;
+  font-size: 20px;
+  margin: 0px 5px 0px 10px;
+  text-decoration: none !important;
+  color: #505050;
+  text-transform: uppercase;
+}
+a:hover {
+  color: #505050;
+}
+.logo {
+  margin: 20px auto 20px auto;
+  text-align: center;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+.text-help {
+  color: red;
+}
+
+.cardbottom {
+  padding: 0px 10px 0px 20px;
+  text-align: start;
+}
+header div a:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+h6 {
+  text-transform: uppercase;
+}
+header div a:hover:after {
+  width: 100%;
+  background: black;
+}
+.containerb div ul {
+  float: right;
+
+  padding-left: 0px;
+}
+button[type="submit"] {
+  border-radius: 50px;
+  background-color: #505050;
+  color: white;
+  width: 100px;
+  padding: 15px 0 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.form-control {
+  border-radius: 50px;
+}
+header div h2 {
+  padding-top: 15px;
+}
+@media only screen and (max-width: 650px) {
+  header div h2 {
+    font-size: 40px !important;
+  }
+  .containerb {
+    background-image: url("../static/images/mypic.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 959px) {
+  .containerb {
+    background-image: url("../static/images/mypic.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+  }
+  i {
+    color: white;
+  }
+}
+@media only screen and (min-width: 1250px) {
+  .nav {
+    padding: 0px 80px 0px 80px;
+  }
+  header div h2 {
+    font-size: 80px !important;
+  }
+  header div ul li a {
+    padding: 0px 40px;
+  }
+}
