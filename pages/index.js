@@ -38,12 +38,12 @@ export default class extends Component {
               </div>
             </Hidden>
           </div>
-          <hr />
+          <hr width="80%"/>
         </div>
         <div id="work" className="work">
           <ProjectIndex />
         </div>
-        <hr />
+        <hr width="80%"/>
         <div id="contact" className="contact">
           <div className="container contact-header">
             <h1>LET'S TALK</h1>
