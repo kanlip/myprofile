@@ -5,5 +5,15 @@ services:
 before_install: 
   - docker build -t kanlip/myprofile -f Dockerfile.dev .
 
-script:
-  - 
+deploy:
+  provider: elasticbeanstalk
+  region: ap-southeast-1
+  app: "docker-myprofile"
+  env: "Docker-env"
+  bucket_name: "elasticbeanstalk-ap-southeast-1-885951704441"
+  bucket_path: "docker-myprofile"
+  on: 
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"

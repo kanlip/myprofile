@@ -2,6 +2,12 @@ version: '3'
 services:
   mongo-server:
     image: 'mongo'
+    volumes: 
+      - /data/db:/data/db
+  mongo-seed:
+    build: ./mongo-seed
+    links:
+      - mongo-server
   node-app:
     restart: on-failure
     build:
