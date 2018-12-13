@@ -5,6 +5,9 @@ services:
 before_install: 
   - docker build -t kanlip/myprofile -f Dockerfile.dev .
 
+script:
+  -
+
 deploy:
   provider: elasticbeanstalk
   region: "ap-southeast-1"
